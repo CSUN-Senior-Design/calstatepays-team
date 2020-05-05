@@ -2,7 +2,7 @@
 
 sudo adduser calstatepays || true
 
-sudo -i -u calstatepays mkdir /home/calstatepays/.ssh || true
+sudo -i -u calstatepays mkdir -p /home/calstatepays/.ssh || true
 sudo -i -u calstatepays chmod 700 /home/calstatepays/.ssh || true
 sudo -i -u calstatepays touch /home/calstatepays/.ssh/authorized_keys || true
 sudo -i -u calstatepays chmod 600 /home/calstatepays/.ssh/authorized_keys || true
