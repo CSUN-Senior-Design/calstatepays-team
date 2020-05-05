@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo adduser calstatepays || true
+sudo id -u calstatepays &>/dev/null || sudo adduser calstatepays
 
 sudo -i -u calstatepays mkdir -p /home/calstatepays/.ssh || true
 sudo -i -u calstatepays chmod 700 /home/calstatepays/.ssh || true
