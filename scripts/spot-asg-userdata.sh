@@ -7,3 +7,4 @@ service httpd start
 sudo yum repolist all
 sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum install stress -y
+stress --cpu 1 --timeout 300
